@@ -3,3 +3,6 @@ os: linux
 files:
   - source: 'build/index.html'
     destination: '/var/www/html/'
+  - source: 'build/styles.css'
+    destination: '/var/www/html/'
+

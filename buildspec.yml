@@ -4,8 +4,9 @@ phases:
     commands:
       - mkdir -p build
       - cp index.html build/
+      - cp styles.css build/
 artifacts:
   files:
     - 'build/index.html'
+    - 'build/styles.css'
   base-directory: 'build'
-
