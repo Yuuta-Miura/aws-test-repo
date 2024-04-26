@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "No dependencies to install"
+  build:
+    commands:
+      - echo "Building the project"
+      - mkdir -p build
+      - cp index.html build/
+      - cp styles.css build/
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'build'

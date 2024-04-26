@@ -1,6 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html/
-
+  - source: 'build/index.html'
+    destination: '/var/www/html/'
+  - source: 'build/styles.css'
+    destination: '/var/www/html/'
+hooks:
+  BeforeInstall:
+    - location: scripts/preinstall.sh
+      runas: root
+  AfterInstall:
+    - location: scripts/postinstall.sh
+      runas: root
