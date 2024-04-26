@@ -5,9 +5,12 @@ phases:
       - echo "No dependencies to install"
   build:
     commands:
+      - DEFAULT=`pwd`
       - mkdir -p build
-      - cp index.html build/ # ビルドで index.html を生成
+      - cd build
+      - cd $DEFAULT 
+      - cp index.html build/
 artifacts:
   files:
-    - 'build/index.html' # アーティファクトとして保存するファイル
-  base-directory: 'build' # ビルド後のベースディレクトリ
+    - 'index.html'
+  base-directory: 'build'
