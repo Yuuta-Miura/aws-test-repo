@@ -3,9 +3,6 @@ phases:
   build:
     commands:
       - DEFAULT=`pwd`
-      - mkdir -p build
-      - cd build
-      - cd $DEFAULT 
       - cp index.html build/
 artifacts:
   files:
