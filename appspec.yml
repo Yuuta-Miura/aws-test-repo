@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
 files:
-version: 0.0
-os: linux
-files:
   - source: 'build/index.html' # ビルドで生成された index.html
     destination: '/var/www/html/' # Web サーバの配置先
