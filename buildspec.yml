@@ -11,5 +11,7 @@ phases:
       - cp styles.css build/
 artifacts:
   files:
-    - '**/*'
+    - 'build/index.html'
+    - 'build/styles.css'
   base-directory: 'build'
+
