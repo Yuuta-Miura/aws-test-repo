@@ -5,12 +5,13 @@ phases:
       - echo "No dependencies to install"
   build:
     commands:
+      - echo "Building the project"
       - mkdir -p build
-      - cp index.html build/ # ビルドで index.html を生成
+      - cp index.html build/
+      - cp styles.css build/
 artifacts:
   files:
-    - 'build/index.html' # アーティファクトとして保存するファイル
-  base-directory: 'build' # ビルド後のベースディレクトリ
-
+    - '**/*' # ディレクトリ内のすべてのファイ
+  base-directory: 'build'
 
 
