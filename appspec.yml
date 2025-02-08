@@ -1,6 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: '/'
-    destination: '/home/ec2-user/Work/'
-
+  - source: /
+    destination: /home/ec2-user/Work
+permissions:
+  - object: /home/ec2-user/Work
+    owner: ec2-user
+    group: ec2-user
+    mode: 755
